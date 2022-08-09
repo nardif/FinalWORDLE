@@ -8,7 +8,7 @@ window.onload = function(){
     var chequeoWin = true;  //si esta en true al final de las validaciones el jugador adivinó la palabra
     var iPalabraGanadora = Math.floor(Math.random() * (13941 + 1));
     var estado_Partida = "pendiente";
-    var num_Partida;
+    var num_Partida = 0;
     var tiempo_Actual;
     var btnGuardarPartida = document.getElementById('guardar');
 
