@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Final WORDLE</title>
+      <link rel="stylesheet" href="stylesContacto.css">
+      <link rel="stylesheet" href="../assets/stylesGeneral.css">
+      <script src="appContacto.js"></script>
+    </head>
+    <body>
+        <div class="contenedor">
+            <header>
+                <h1 class="titulo">Formulario de contacto</h1>
+            </header>
+                <!-- Modal para campos vacíos -->
+                <div id="miModal" class="modal">
+                    <div class="modal-content">
+                        <span class="cerrar">&times;</span>
+                        <p>Debes completar todos los campos</p>
+                    </div>
+                </div>
+                <!-- Form contacto -->
+            <form class="form" id="miForm">
+                <div class="inputContainer ic1">
+                    <label for="nombre">Nombre</label>
+                    <input class="input" type="text" id="nombre" name="nombre">
+                    <p id="em_nombre" class="errorOculto">El nombre debe ser alfanumérico</p>
+                </div>
+                <div class="inputContainer ic2">
+                    <label for="email">Email</label>
+                    <input class="input" type="text" id="email" name="email">
+                    <p id="em_email" class="errorOculto">Debe tener el formato de email: 'name@mail.com'</p>
+                    </div>
+                <div class="inputContainer ic3">
+                    <label for="mensaje" class="titles">Mensaje</label>
+                    <textarea type="text" name="mensaje" id="mensaje"></textarea>
+                    <p id="em_mensaje" class="errorOculto">El mensaje debe tener más de 5 caracteres</p>
+                </div>
+                <button type="button" id="btn">Enviar</button>
+            </form>
+            
+            <footer>
+                <p>LPPA - Final</p>
+                <p>Florencia Nardi</p>
+                <a href="/index.html">Inicio</a>
+
+            </footer>
+        </div> 
+    </body>
+</html>

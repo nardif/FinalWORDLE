@@ -1,55 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Final WORDLE</title>
-      <link rel="stylesheet" href="/assets/styles.css">
-      <script src="app.js"></script>
+      <link rel="stylesheet" href="./formContacto/stylesContacto.css">
+      <link rel="stylesheet" href="./assets/stylesGeneral.css">
+      <script src="appInicio.js"></script>
     </head>
     <body>
-        <fieldset id="f0">
-            <input type="text" id="R0C0" class="" maxlength="1">
-            <input type="text" id="R0C1" class="" maxlength="1">
-            <input type="text" id="R0C2" class="" maxlength="1">
-            <input type="text" id="R0C3" class="" maxlength="1">
-            <input type="text" id="R0C4" class="" maxlength="1">
-        </fieldset>
-        <fieldset id="f1">
-            <input type="text" id="R1C0" class="" maxlength="1">
-            <input type="text" id="R1C1" class="" maxlength="1">
-            <input type="text" id="R1C2" class="" maxlength="1">
-            <input type="text" id="R1C3" class="" maxlength="1">
-            <input type="text" id="R1C4" class="" maxlength="1">
-        </fieldset>
-        <fieldset id="f2">
-            <input type="text" id="R2C0" class="" maxlength="1">
-            <input type="text" id="R2C1" class="" maxlength="1">
-            <input type="text" id="R2C2" class="" maxlength="1">
-            <input type="text" id="R2C3" class="" maxlength="1">
-            <input type="text" id="R2C4" class="" maxlength="1">
-        </fieldset>
-        <fieldset id="f3">
-            <input type="text" id="R3C0" class="" maxlength="1">
-            <input type="text" id="R3C1" class="" maxlength="1">
-            <input type="text" id="R3C2" class="" maxlength="1">
-            <input type="text" id="R3C3" class="" maxlength="1">
-            <input type="text" id="R3C4" class="" maxlength="1">
-        </fieldset>
-        <fieldset id="f4">
-            <input type="text" id="R4C0" class="" maxlength="1">
-            <input type="text" id="R4C1" class="" maxlength="1">
-            <input type="text" id="R4C2" class="" maxlength="1">
-            <input type="text" id="R4C3" class="" maxlength="1">
-            <input type="text" id="R4C4" class="" maxlength="1">
-        </fieldset>
-        <fieldset id="f5">
-            <input type="text" id="R5C0" class="" maxlength="1">
-            <input type="text" id="R5C1" class="" maxlength="1">
-            <input type="text" id="R5C2" class="" maxlength="1">
-            <input type="text" id="R5C3" class="" maxlength="1">
-            <input type="text" id="R5C4" class="" maxlength="1">
-        </fieldset>
+        <div class="contenedor">
+            <header>
+                <h1 class="titulo">WORDLE</h1>
+            </header>
+            <div id="inicio_sesion">
+                <form class="form" id="miForm">
+                    <h2>INICIO SESION</h2>
+                    <div class="inputContainer ic1">
+                        <label for="nombre">Nombre</label>
+                        <input class="input" type="text" id="nombre" name="nombre">
+                        <p id="em_nombre" class="errorOculto">Debe ingresar un valor en el campo</p>
+                    </div>
+                    <button type="button" id="btn">Jugar</button>
+                </form>
+            </div>
+            <footer>
+                <p>LPPA - Final</p>
+                <p>Florencia Nardi</p>
+                <a href="./formContacto/contacto.html">Contacto</a>
+            </footer>
+        </div>
     </body>
 </html>
